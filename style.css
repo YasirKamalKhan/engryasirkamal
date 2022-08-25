@@ -223,7 +223,7 @@ section .title::after{
     height: 420px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 70px;
     border: 4px solid crimson;
 }
 .about .about-content .right{
@@ -488,7 +488,7 @@ section .title::after{
     color: rgb(223, 30, 69);
 }
 .contact .contact-content .info .sub-title{
-    color: rgb(212, 211, 211);
+    color: rgb(241, 241, 241);
 }
 .contact .right form .fields{
     display: flex;
