@@ -1,0 +1,434 @@
+
+
+.navbarM{
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.781); */
+    background-image: linear-gradient( 106.9deg,  rgba(148,14,60,1) 60.9%, rgba(3,22,27,1) 122.3% );
+    padding: 18px 0;
+}
+
+.navbarM .max-width ul li a{
+    text-decoration: none;
+}
+.navbarM .max-width .logo a{
+    text-decoration: none;
+}
+
+/* ************ cv section ************ */
+.mainbd {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 3000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.mainbd section{
+    padding: 5px;
+}
+/* ************** Left Section ***************  */
+.mainbd .left {
+    position: relative;
+    background-color: #003147;
+}
+
+/* ******Pic Box  */
+.pic-name {
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.pic-name .image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.pic-name .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: 2px solid green;
+    border-radius: 50%; */
+}
+
+.pic-name h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.pic-name h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/* ******Data Box  */
+.data {
+    /* background-color: #700600; */
+    padding-top: 30px;
+    /* border: 2px solid red; */
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titles {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+
+}
+
+.line {
+    width: 80%;
+    margin-left: 30px;
+}
+
+.data ul {
+    position: relative;
+    padding-left: 8px;
+}
+
+.data ul li a {
+    text-decoration: none;
+}
+
+.data ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.data ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.data ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.data ul li .text {
+
+    padding: 5px;
+}
+
+.data ul li .text:hover {
+    color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.data ul li #call {
+    box-shadow: 0px 0px 10px #ffa500;
+    padding: 0.4em;
+    /* width: 0.1vw; */
+    margin-left: 4px;
+}
+
+.data ul li #call:hover {
+    color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* ******** Profile Section ******** */
+.profile {
+    padding-top: 30px;
+    /* border: 2px solid red; */
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.personal {
+    color: #fff;
+    line-height: 25px;
+    padding-left: 8px;
+}
+
+
+/* ******** References Section **********  */
+.reference {
+    /* border: 2px solid red; */
+    width: 95%;
+    color: #fff;
+    /* font-size: 1.5rem; */
+    padding: 30px 10px 30px 10px;
+}
+
+.course {
+    margin-left: 8px;
+    /* padding: 10px 0px; */
+}
+
+.course span {
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+    /* box-shadow: 0px 0px 10px red; */
+    /* border-radius: 6px; */
+    padding: 4px;
+}
+
+.course .id {
+    font-weight: 300;
+    line-height: 10px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.course>h5 {
+    font-weight: bold;
+
+}
+
+.course .ref a {
+
+    text-decoration: none;
+    color: #03a9f4;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-left: 8px;
+}
+
+.course .ref a:hover {
+    padding: 2px;
+    color: black;
+    background-color: #fff;
+}
+
+/* empty box  */
+/* .empty {
+    width: 99%;
+    min-height: 180px;
+    margin-top: 10px;
+} */
+
+
+/* ************** Right Section *************** */
+
+.mainbd .right {
+    position: relative;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    padding: 10px;
+    /* width: 60%; */
+}
+
+.right .about {
+    /* padding-left: 15px; */
+    /* border: 2px solid green; */
+    color: #000;
+    /* width: 100%; */
+    /* min-height: 248px; */
+    /* margin-top: 10px; */
+}
+
+.right .about .titles {
+    /* font-weight: bold; */
+    color: #003147;
+    border-bottom: 2px solid #003047e3;
+}
+
+
+/* ********** Experience *********** */
+
+.right .about .box {
+    margin: 8px 0px;
+    margin-left: 8px;
+}
+
+.about .box .year-company {
+    min-width: 130px;
+}
+
+.about .box .text h6 a, .about .box .year-company h6 a{
+    color: #03a9f4;
+}
+
+.about .box .text h6 a:hover, .about .box .year-company h6 a:hover{
+    padding: 0px 5px;
+    color: #fff;
+    background-color: #003147;
+    text-decoration: none;
+
+}
+.about .box .year-company h6 {
+    color: #848c98;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* ********** Education *********** */
+
+
+/* ********** Skills Section ***********  */
+
+.skills .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .right .bars .info h6 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-weight: bold;
+
+}
+
+.skills .right .bars .line {
+    margin-left: 0px;
+}
+
+.skills .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .right span {
+    font-weight: 500;
+}
+
+.skills .right .line {
+    height: 8px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    border-radius: 25px;
+}
+
+.skills .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #03a9f4;
+    border-radius: 25px;
+}
+
+.skills .right .Auto::before {
+    width: 95%;
+}
+
+.skills .right .Photo::before {
+    width: 80%;
+}
+
+.skills .right .Illus::before {
+    width: 70%;
+}
+
+.skills .right .Excel::before {
+    width: 80%;
+}
+
+.skills .right .Com::before {
+    width: 85%;
+}
+
+/* ********** Languages *********** */
+.languages .right span {
+    font-weight: 500;
+}
+
+.languages .right .line {
+    height: 8px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    border-radius: 25px;
+}
+
+.languages .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #03a9f4;
+    border-radius: 25px;
+}
+
+.languages .right .Auto::before {
+    width: 90%;
+}
+
+.languages .right .Photo::before {
+    width: 95%;
+}
+
+.languages .right .Illus::before {
+    width: 99%;
+}
+
+/* ********** Hobbies *********** */
+
+.hobbies .subHob {
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.hobbies .subHob .hobs>i {
+    font-size: 2em;
+    color: #03a9f4;
+}
+
+.hobbies .subHob .hobs>div {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.hobbies .subHob .hobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsive  */
+@media (max-width: 900px){
+    .mainbd{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 550px){
+    .right .about .box{
+        flex-direction: column;
+    }
+}

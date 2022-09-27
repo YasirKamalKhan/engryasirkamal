@@ -77,8 +77,8 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
-.navbar{
+/* navbarM styling */
+.navbarM{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -86,32 +86,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbarM.sticky{
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width{
+.navbarM .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbarM .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbarM .logo a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbarM.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+.navbarM .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbarM .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -119,10 +119,10 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbarM .menu li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
+.navbarM.sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -213,6 +213,12 @@ section .title::after{
 }
 
 /* about section styling */
+#about{
+    background-image: linear-gradient( 180deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+    /* background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% ); */
+    /* background-image: linear-gradient( 106.9deg,  rgba(148,14,60,1) 60.9%, rgba(3,22,27,1) 122.3% ); */
+    /* background-image: linear-gradient( 328deg, #F97794 10%, #623AA2 100%); */
+}
 .about .title::after{
     content: "who i am";
 }
@@ -304,6 +310,10 @@ section .title::after{
 }
 
 /* skills section styling */
+#skills{
+    background-image: linear-gradient( 180deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+
+}
 
 .skills .title::after{
     content: "what i know";
@@ -586,7 +596,7 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-    .navbar .menu{
+    .navbarM .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -597,13 +607,13 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbarM .menu.active{
         left: 0;
     }
-    .navbar .menu li{
+    .navbarM .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbarM .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -691,3 +701,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
