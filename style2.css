@@ -1,16 +1,15 @@
-
-
-.navbarM{
+.navbarM {
     position: relative;
     /* background-color: rgba(0, 0, 0, 0.781); */
-    background-image: linear-gradient( 106.9deg,  rgba(148,14,60,1) 60.9%, rgba(3,22,27,1) 122.3% );
+    background-image: linear-gradient(106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
     padding: 18px 0;
 }
 
-.navbarM .max-width ul li a{
+.navbarM .max-width ul li a {
     text-decoration: none;
 }
-.navbarM .max-width .logo a{
+
+.navbarM .max-width .logo a {
     text-decoration: none;
 }
 
@@ -21,15 +20,17 @@
     margin-bottom: 30px;
     width: 100%;
     max-width: 1000px;
-    max-height: 3000px;
+    max-height: 3500px;
     background: #fff;
     display: grid;
     grid-template-columns: 1.2fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
 }
-.mainbd section{
+
+.mainbd section {
     padding: 5px;
 }
+
 /* ************** Left Section ***************  */
 .mainbd .left {
     position: relative;
@@ -40,7 +41,7 @@
 .pic-name {
     position: relative;
     padding-bottom: 20px;
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.5px solid rgb(3 169 244);
 }
 
 .pic-name .image {
@@ -50,6 +51,7 @@
     border-radius: 50%;
     overflow: hidden;
     margin-top: 20px;
+    box-shadow: 0px 0px 17px 3px #0089c7d1;
 }
 
 .pic-name .image img {
@@ -122,6 +124,7 @@
     display: inline-block;
     width: 30px;
     font-size: 18px;
+    /* color: crimson; */
     color: #03a9f4;
 }
 
@@ -141,10 +144,10 @@
     cursor: pointer;
 }
 
-.data ul li #call {
+/* .data ul li #call {
     box-shadow: 0px 0px 10px #ffa500;
     padding: 0.4em;
-    /* width: 0.1vw; */
+    /* width: 0.1vw; 
     margin-left: 4px;
 }
 
@@ -152,283 +155,376 @@
     color: black;
     background-color: whitesmoke;
     cursor: pointer;
+} */
+/* button animation */
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-
-/* ******** Profile Section ******** */
-.profile {
-    padding-top: 30px;
-    /* border: 2px solid red; */
-    width: 95%;
-    padding-left: 10px;
-    padding-right: 10px;
+.button-anim {
+    min-width: 50px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 4px 5px 24px rgb(79 209 197 / 64%);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    /* padding: 10px; */
 }
 
-.personal {
-    color: #fff;
-    line-height: 25px;
-    padding-left: 8px;
+.wrap button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(50px + 12px);
+    min-height: calc(40px + 12px);
+    border: 0px solid #00FFCB;
+    box-shadow: 0 0 60px rgb(0 255 203 / 14%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
 }
 
-
-/* ******** References Section **********  */
-.reference {
-    /* border: 2px solid red; */
-    width: 95%;
-    color: #fff;
-    /* font-size: 1.5rem; */
-    padding: 30px 10px 30px 10px;
+.button-anim:hover,
+.button-anim:focus {
+    color: #313133;
+    transform: translateY(-6px);
 }
 
-.course {
-    margin-left: 8px;
-    /* padding: 10px 0px; */
+.wrap button:hover::before,
+.wrap button:focus::before {
+    opacity: 1;
 }
 
-.course span {
-    /* font-size: 1.2rem; */
-    font-weight: bold;
-    /* box-shadow: 0px 0px 10px red; */
-    /* border-radius: 6px; */
-    padding: 4px;
+.wrap button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
 }
 
-.course .id {
-    font-weight: 300;
-    line-height: 10px;
-    margin-bottom: 10px;
-    box-shadow: none;
-    border-radius: none;
+.wrap button:hover::after,
+.wrap button:focus::after {
+    animation: none;
+    display: none;
 }
 
-.course>h5 {
-    font-weight: bold;
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
 
 }
+    /* ******** Profile Section ******** */
+    .profile {
+        padding-top: 30px;
+        /* border: 2px solid red; */
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-.course .ref a {
+    .personal {
+        color: #fff;
+        line-height: 25px;
+        padding-left: 8px;
+    }
 
-    text-decoration: none;
-    color: #03a9f4;
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-left: 8px;
-}
 
-.course .ref a:hover {
-    padding: 2px;
-    color: black;
-    background-color: #fff;
-}
+    /* ******** References Section **********  */
+    .reference {
+        /* border: 2px solid red; */
+        width: 95%;
+        color: #fff;
+        /* font-size: 1.5rem; */
+        padding: 30px 10px 30px 10px;
+    }
 
-/* empty box  */
-/* .empty {
+    .course {
+        margin-left: 8px;
+        /* padding: 10px 0px; */
+    }
+
+    .course span {
+        /* font-size: 1.2rem; */
+        font-weight: bold;
+        /* box-shadow: 0px 0px 10px red; */
+        /* border-radius: 6px; */
+        padding: 4px;
+    }
+
+    .course .id {
+        font-weight: 300;
+        line-height: 10px;
+        margin-bottom: 10px;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .course>h5 {
+        font-weight: bold;
+
+    }
+
+    .course .ref a {
+
+        text-decoration: none;
+        color: #03a9f4;
+        /* color: crimson; */
+        font-weight: bold;
+        font-size: 0.9em;
+        margin-left: 8px;
+    }
+
+    .course .ref a:hover {
+        padding: 2px;
+        color: black;
+        background-color: #fff;
+    }
+
+    /* empty box  */
+    /* .empty {
     width: 99%;
     min-height: 180px;
     margin-top: 10px;
 } */
 
 
-/* ************** Right Section *************** */
+    /* ************** Right Section *************** */
 
-.mainbd .right {
-    position: relative;
-    background-color: #fff;
-    /* border: 2px solid red; */
-    padding: 10px;
-    /* width: 60%; */
-}
-
-.right .about {
-    /* padding-left: 15px; */
-    /* border: 2px solid green; */
-    color: #000;
-    /* width: 100%; */
-    /* min-height: 248px; */
-    /* margin-top: 10px; */
-}
-
-.right .about .titles {
-    /* font-weight: bold; */
-    color: #003147;
-    border-bottom: 2px solid #003047e3;
-}
-
-
-/* ********** Experience *********** */
-
-.right .about .box {
-    margin: 8px 0px;
-    margin-left: 8px;
-}
-
-.about .box .year-company {
-    min-width: 130px;
-}
-
-.about .box .text h6 a, .about .box .year-company h6 a{
-    color: #03a9f4;
-}
-
-.about .box .text h6 a:hover, .about .box .year-company h6 a:hover{
-    padding: 0px 5px;
-    color: #fff;
-    background-color: #003147;
-    text-decoration: none;
-
-}
-.about .box .year-company h6 {
-    color: #848c98;
-}
-
-.about .box .text h4 {
-    text-transform: uppercase;
-    color: #2a7da2;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-/* ********** Education *********** */
-
-
-/* ********** Skills Section ***********  */
-
-.skills .right .bars {
-    margin-bottom: 15px;
-}
-
-.skills .right .bars .info h6 {
-    text-transform: uppercase;
-    color: #2a7da2;
-    font-weight: bold;
-
-}
-
-.skills .right .bars .line {
-    margin-left: 0px;
-}
-
-.skills .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .right span {
-    font-weight: 500;
-}
-
-.skills .right .line {
-    height: 8px;
-    width: 100%;
-    background: #f0f0f0;
-    position: relative;
-    border-radius: 25px;
-}
-
-.skills .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #03a9f4;
-    border-radius: 25px;
-}
-
-.skills .right .Auto::before {
-    width: 95%;
-}
-
-.skills .right .Photo::before {
-    width: 80%;
-}
-
-.skills .right .Illus::before {
-    width: 70%;
-}
-
-.skills .right .Excel::before {
-    width: 80%;
-}
-
-.skills .right .Com::before {
-    width: 85%;
-}
-
-/* ********** Languages *********** */
-.languages .right span {
-    font-weight: 500;
-}
-
-.languages .right .line {
-    height: 8px;
-    width: 100%;
-    background: #f0f0f0;
-    position: relative;
-    border-radius: 25px;
-}
-
-.languages .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #03a9f4;
-    border-radius: 25px;
-}
-
-.languages .right .Auto::before {
-    width: 90%;
-}
-
-.languages .right .Photo::before {
-    width: 95%;
-}
-
-.languages .right .Illus::before {
-    width: 99%;
-}
-
-/* ********** Hobbies *********** */
-
-.hobbies .subHob {
-    justify-content: space-around;
-    margin-top: 25px;
-}
-
-.hobbies .subHob .hobs>i {
-    font-size: 2em;
-    color: #03a9f4;
-}
-
-.hobbies .subHob .hobs>div {
-    margin-top: 10px;
-    color: #333;
-    font-weight: bold;
-}
-
-.hobbies .subHob .hobs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Responsive  */
-@media (max-width: 900px){
-    .mainbd{
-        margin: 10px;
-        grid-template-columns: repeat(1, 1fr);
+    .mainbd .right {
+        position: relative;
+        background-color: #fff;
+        /* border: 2px solid red; */
+        padding: 10px;
+        /* width: 60%; */
     }
-}
 
-@media (max-width: 550px){
-    .right .about .box{
+    .right .about {
+        /* padding-left: 15px; */
+        /* border: 2px solid green; */
+        color: #000;
+        /* width: 100%; */
+        /* min-height: 248px; */
+        /* margin-top: 10px; */
+    }
+
+    .right .about .titles {
+        /* font-weight: bold; */
+        color: #003147;
+        border-bottom: 2px solid #003047e3;
+    }
+
+
+    /* ********** Experience *********** */
+
+    .right .about .box {
+        margin: 8px 0px;
+        margin-left: 8px;
+    }
+
+    .about .box .year-company {
+        min-width: 130px;
+    }
+
+    .about .box .text h6 a,
+    .about .box .year-company h6 a {
+        color: #03a9f4;
+        /* color: crimson; */
+    }
+
+    .about .box .text h6 a:hover,
+    .about .box .year-company h6 a:hover {
+        padding: 0px 5px;
+        color: #fff;
+        background-color: #003147;
+        text-decoration: none;
+
+    }
+
+    .about .box .year-company h6 {
+        color: #848c98;
+    }
+
+    .about .box .text h4 {
+        text-transform: uppercase;
+        color: #2a7da2;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    /* ********** Education *********** */
+
+
+    /* ********** Skills Section ***********  */
+
+    .skills .right .bars {
+        margin-bottom: 15px;
+    }
+
+    .skills .right .bars .info h6 {
+        text-transform: uppercase;
+        color: #2a7da2;
+        font-weight: bold;
+
+    }
+
+    .skills .right .bars .line {
+        margin-left: 0px;
+    }
+
+    .skills .right .info {
+        display: flex;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skills .right span {
+        font-weight: 500;
+    }
+
+    .skills .right .line {
+        height: 8px;
+        width: 100%;
+        background: #f0f0f0;
+        position: relative;
+        border-radius: 25px;
+    }
+
+    .skills .right .line::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #03a9f4;
+        /* background: crimson; */
+        border-radius: 25px;
+    }
+
+    .skills .right .Auto::before {
+        width: 95%;
+    }
+
+    .skills .right .Photo::before {
+        width: 80%;
+    }
+
+    .skills .right .Illus::before {
+        width: 70%;
+    }
+
+    .skills .right .Excel::before {
+        width: 80%;
+    }
+
+    .skills .right .Com::before {
+        width: 85%;
+    }
+
+    /* ********** Languages *********** */
+    .languages .right span {
+        font-weight: 500;
+    }
+
+    .languages .right .line {
+        height: 8px;
+        width: 100%;
+        background: #f0f0f0;
+        position: relative;
+        border-radius: 25px;
+    }
+
+    .languages .right .line::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #03a9f4;
+        border-radius: 25px;
+    }
+
+    .languages .right .Auto::before {
+        width: 90%;
+    }
+
+    .languages .right .Photo::before {
+        width: 95%;
+    }
+
+    .languages .right .Illus::before {
+        width: 99%;
+    }
+
+    /* ********** Hobbies *********** */
+
+    .hobbies .subHob {
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    .hobbies .subHob .hobs>i {
+        font-size: 2em;
+        color: #03a9f4;
+    }
+
+    .hobbies .subHob .hobs>div {
+        margin-top: 10px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .hobbies .subHob .hobs {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-}
+
+
+    /* Responsive  */
+    @media (max-width: 900px) {
+        .mainbd {
+            margin: 10px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media (max-width: 550px) {
+        .right .about .box {
+            flex-direction: column;
+        }
+    }

@@ -73,7 +73,7 @@ section .title::after{
     font-size: 20px;
     color: #f10935;
     padding: 0 5px;
-    background: #f7f3f3;
+    background: #ffac9c;
     transform: translateX(-50%);
 }
 
@@ -214,7 +214,7 @@ section .title::after{
 
 /* about section styling */
 #about{
-    background-image: linear-gradient( 180deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+    background-image: linear-gradient( 158deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
     /* background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% ); */
     /* background-image: linear-gradient( 106.9deg,  rgba(148,14,60,1) 60.9%, rgba(3,22,27,1) 122.3% ); */
     /* background-image: linear-gradient( 328deg, #F97794 10%, #623AA2 100%); */
@@ -230,7 +230,8 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 70px;
-    border: 4px solid crimson;
+    /* border: 4px solid crimson; */
+    box-shadow: 0px 0px 30px #ff4d09;
 }
 .about .about-content .right{
     width: 55%;
@@ -274,7 +275,7 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: rgb(17, 17, 17);
+    background: rgb(34 34 34);
     content: "what i provide";
 }
 .services .serv-content .card{
@@ -311,7 +312,7 @@ section .title::after{
 
 /* skills section styling */
 #skills{
-    background-image: linear-gradient( 180deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+    background-image: linear-gradient( 158deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
 
 }
 
@@ -465,7 +466,7 @@ section .title::after{
 }
 .contact .title::after{
     content: "get in touch";
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(34 34 34);
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
